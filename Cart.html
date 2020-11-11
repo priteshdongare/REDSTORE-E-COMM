@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="PRITESH DONGARE">
+
+    <title>Cart</title>
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+<!-- header part  -->
+
+<div class="center top  add">
+
+    <nav class="nav">
+
+        <a href="index.html"class="logo"><img src="img/logo.png"></a>
+        
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="All product.html">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="Account.html">Account</a></li>
+        </ul>
+        <div class="underpart">
+
+            <a href="Cart.html" class="cart"><img src="img/cart.png" alt=""></a>
+            <button class="toggle"><img src="img/menu.png" alt=""></button>
+        
+        </div> 
+
+    </nav>
+
+</div>
+
+
+
+
+<div class="cart">
+    
+    <table>
+
+        <tr class="color">
+            <th class="left-side">Products</th>
+            <th class="text-align">Quantity</th>
+            <th class="right-side">Subtotal</th>
+        </tr>
+
+        <tr id="none">
+            <td class="think">
+              <img src="img/buy-1.jpg" alt="">
+              <div class="com">
+
+                <h1>Red Printed T-shirt </h1>
+                <h2>price: $50.00</h2>
+                <h3 onclick="RT()">Remove</h3>
+
+              </div> 
+            </td>
+            <td class="text-align"><input type="number" value="1"></td>
+            <td class="right-side"><h1>$50.00</h1></td>
+        </tr>
+
+        <tr id="none1">
+            <td class="think">
+              <img src="img/buy-2.jpg" alt="">
+              <div class="com">
+
+                <h1>HRX Sports Shoes</h1>
+                <h2>price: $75.00</h2>
+                <h3 onclick="Shoes()">Remove</h3>
+
+              </div> 
+            </td>
+            <td class="text-align"><input type="number" value="1"></td>
+            <td class="right-side"><h1>$75.00</h1></td>
+        </tr>
+
+        <tr id="none2">
+            <td class="think">
+              <img src="img/buy-3.jpg" alt="">
+              <div class="com">
+
+                <h1>HRX Greay Trackpants </h1>
+                <h2>price: $75.00</h2>
+                <h3 onclick="Greay()">Remove</h3>
+
+              </div> 
+            </td>
+            <td class="text-align"><input type="number" value="1"></td>
+            <td class="right-side"><h1>$75.00</h1></td>
+        </tr>
+        
+    </table>
+
+    <div class="min-max">
+        <div class="only-one">
+        <table>
+           <tr>
+               <td>Subtotal</td>
+               <td class="right-side" id="subtotal">$200.00</td>
+           </tr>
+           <tr>
+               <td>Tax</td>
+               <td class="right-side" id="tax">$35.00</td>
+           </tr>
+           <tr>
+               <td>Total</td>
+               <td class="right-side" id="total">$235.00</td>
+           </tr>
+        </table>
+
+        <a href="" class="Proceed">Proceed To chekout <span class="fa fa-long-arrow-right"></span></a>
+
+    </div>
+    </div>
+   
+</div>
+
+
+
+
+<!-- footer  -->
+
+<footer id="about" class="margin-top">
+
+    <div class="center">
+
+        <div class="rowtype notf">
+
+            <section class="down">
+
+                <h2>Download Our App</h2>
+                <h3>Download App Android and ios mobile phone.</h3>
+                <div class="app not">
+
+                    <img src="img/play-store.png" >
+                    <img src="img/app-store.png" >
+
+                </div>
+
+            </section>
+
+            <section class="logof">
+
+                <img src="img/logo-white.png">
+                <h5>Our Purpose is To Sustainably Make the pleare and <br> 
+                   Benifites of Sports Acessibale to the Many.
+                 </h5>
+
+            </section>
+
+            <div class="ul2">
+
+                <h4>Ueseful Links</h4>
+                <ul>
+                    <li><a href="">Coupons</a></li>
+                    <li><a href="">Blog Post</a></li>
+                    <li><a href="">Returen Policy</a></li>
+                    <li><a href="">Join affilliate </a></li>
+            
+                </ul>
+                
+            </div>
+
+            <div class="ul2">
+
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Tiwtter</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">YouTube </a></li>
+            
+                </ul>
+
+            </div>
+
+        </div>
+        
+        <hr>
+
+        <p>Copyright 2020</p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/redstore.js"></script>
+</body>
+</html>
